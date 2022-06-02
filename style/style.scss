@@ -1,0 +1,14 @@
+#container{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+#left{
+    flex-basis: 50%;
+    flex-grow: 0;
+    overflow: hidden;
+    img{
+        width: 200%;
+    }
+}
