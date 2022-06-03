@@ -48,9 +48,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 10%;
 }
 
@@ -59,13 +59,9 @@ h4 {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: wheat;
+  width: 70%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.05rem;
 }
 
 #rows {
@@ -76,6 +72,9 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
 }
 
 .row {
@@ -85,5 +84,37 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 2% 0%;
+}
+
+#createaccount {
+  width: 40%;
+  margin: 1% 0%;
+  width: 40%;
+  margin: 5% 0%;
+  padding: 2% 0%;
+  border-radius: 5%;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+#createaccount:hover {
+  background-color: white;
+  color: black;
+}
+
+.buttonpack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
